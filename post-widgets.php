@@ -75,7 +75,7 @@ if( !class_exists( 'Post_Widgets' ) ) {
 			if( !is_admin() )
 				add_filter( 'sidebars_widgets', array( __CLASS__, 'sidebars_widgets' ) );
 
-			$sidebars = get_option( 'page_widgets', array('') );
+			$sidebars = get_option( 'page_widgets', "" );
 			if( $sidebars == "" ) return;
 
 			$args = array(
